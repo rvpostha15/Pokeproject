@@ -1,1 +1,49 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #2a52be;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button[type="submit"] {
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #00bfff;
+    color: white;
+  }
+  
+  #results {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
+  #blue-red-button {
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 40px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
