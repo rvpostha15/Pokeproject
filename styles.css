@@ -1,1 +1,109 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #2a52be;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
 
+  p {
+    font-family: "pokemon-font", Arial, Helvetica, sans-serif;
+  }
+
+  #pokedex-template {
+    display: flex;
+    justify-content: center;
+  }
+
+  #pokedex {
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: #2a2a2a;
+  }
+
+  #pokemon-details {
+    position: absolute;
+  }
+
+  #pokemon-sprite {
+    position: relative;
+    left: -30px;
+    top: 115px;
+    height: 200px;
+
+  }
+  
+  button[type="submit"] {
+    cursor: pointer;
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #00bfff;
+    color: white;
+  }
+  
+  #results {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 5px;
+  }
+
+  #blue-red-button {
+    cursor: pointer;
+    font-family: "Pokemon Regular", sans-serif;
+    font-size: 18px;
+    color: white;
+    border-radius: 100px;
+    border-color: #ffcb05;
+    margin: 40px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+  }
+
+
+/* Hover effect: transition from left to right */
+#blue-red-button::before,
+#blue-red-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.80s ease;
+    border-radius: 30px;
+}
+
+#blue-red-button::after {
+  box-shadow: inset 0 0 0 1px #ffcb05;
+}
+
+#blue-red-button::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 60px #ffcb05;
+}
+
+#blue-red-button:hover::before {
+  margin-left: 0;
+}
