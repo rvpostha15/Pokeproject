@@ -4,6 +4,7 @@
 // Get a reference to the button
 let blueRedToggle = document.querySelector("#blue-red-button");
 
+
 // Get references to the results elements
 let pokeName = document.querySelector("#pokemon-name");
 let pokeId = document.querySelector("#pokemon-id");
@@ -15,6 +16,7 @@ blueRedToggle.style.backgroundColor = '#cf1920'; //red
 
 // Add an event listener to blueRedToggle
 blueRedToggle.addEventListener("click", function() {
+
   // Toggle the background color and text between red and blue 
   if (document.body.style.backgroundColor === 'rgb(207, 25, 32)') { //red
     document.body.style.backgroundColor = '#2a52be'; //blue
@@ -43,3 +45,4 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
   //   initialFetch();
   //   toggle();
   // })
+

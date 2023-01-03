@@ -17,6 +17,30 @@ body {
     border: none;
     border-radius: 5px 0 0 5px;
   }
+
+  #pokedex-template {
+    display: flex;
+    justify-content: center;
+  }
+
+  #pokedex {
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: #2a2a2a;
+  }
+
+  #pokemon-details {
+    position: absolute;
+  }
+
+  #pokemon-sprite {
+    position: relative;
+    left: -30px;
+    top: 115px;
+    height: 200px;
+
+  }
   
   button[type="submit"] {
     cursor: pointer;
