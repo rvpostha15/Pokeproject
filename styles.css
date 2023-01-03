@@ -29,9 +29,10 @@ body {
   }
   
   #results {
-    margin: 20px 0;
+    margin-left: 40%;
+    margin-right: 40%;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 5px solid white;
     border-radius: 5px;
   }
 
