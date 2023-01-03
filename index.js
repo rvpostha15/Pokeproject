@@ -21,23 +21,6 @@ blueRedToggle.addEventListener("click", function() {
   }
 });
 
-// !RONS VERSION OF FETCH, COMMENTING OUT IN CASE I (chase) BREAK SOMETHING
-// fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-//   .then(response => response.json())
-//   .then(pokemon => {
-//     // Get references to the results elements
-//     let name = document.querySelector("#pokemon-name");
-//     let id = document.querySelector("#pokemon-id");
-//     let type = document.querySelector("#pokemon-type");
-//     let sprite = document.querySelector("#pokemon-sprite");
-
-//     // Set the text content of the elements to display the Pokémon data
-//     name.textContent = pokemon.name;
-//     id.textContent = "ID: " + pokemon.id;
-//     type.textContent = "Type: " + pokemon.types[0].type.name;
-//     sprite.src = pokemon.sprites.front_default;
-//   });
-
 fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
   .then(response => response.json())
   .then(pokemon => {
