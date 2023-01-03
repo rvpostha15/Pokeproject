@@ -18,10 +18,6 @@ body {
     border-radius: 5px 0 0 5px;
   }
 
-  p {
-    font-family: "pokemon-font", Arial, Helvetica, sans-serif;
-  }
-
   #pokedex-template {
     display: flex;
     justify-content: center;
