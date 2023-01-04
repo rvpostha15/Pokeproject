@@ -1,4 +1,4 @@
-const button = document.querySelector("#pokemon-select");
+const player = document.querySelector("#player")
 
 let playerSize = 20;
 let currentDirection = "";
@@ -17,14 +17,6 @@ document.addEventListener("keydown", (e) => {
     }
 })
 
-button.addEventListener("click", (e) => {
-    player.src = sprite.src;
-})
-
-async function populateSprite() {
-    player.src = sprite.src;
-}
-
 function movePlayer(direction) {
 
     // let xInt = parseInt(xPos.replace("px", ""));
@@ -38,7 +30,7 @@ function movePlayer(direction) {
             break;
         }
         case("ArrowRight"): {
-            if (xPos < 580) {
+            if (xPos < 550) {
                 xPos += playerSize;
                 player.style.left = `${xPos}px`;
             }
@@ -52,7 +44,7 @@ function movePlayer(direction) {
             break;
         }
         case("ArrowDown"): {
-            if (yPos > -580) {
+            if (yPos > -550) {
                 yPos -= playerSize;
                 player.style.bottom = `${yPos}px`;
             }

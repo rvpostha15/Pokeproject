@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "pokemon-font";
+  src: url("./pokemon-font.woff") format("woff");
+}
+
 #pokeFilter-container {
   position: absolute;
   left: 40px;
@@ -56,7 +61,7 @@
 }
 
 #pokemon-name {
-  font-family: "Pokemon Regular", sans-serif;
+  font-family: "pokemon-font", sans-serif;
   font-size: 36px;
   position: absolute;
   left: 460px;
@@ -65,8 +70,6 @@
 }
 
 #pokemon-type {
-  font-family: "Pokemon Regular", sans-serif;
-  font-size: 36px;
   position: absolute;
   width: 176px;
   left: 560px;
@@ -75,7 +78,9 @@
 }
 
 #pokemon-id {
-  font-family: "Pokemon Regular", sans-serif;
+  font-family: "pokemon-font", sans-serif;
+  text-shadow: 2px 2px 1px black;
+  color: #ffffff;
   font-size: 30px;
   position: absolute;
   left: 825px;
@@ -84,7 +89,7 @@
 }
 
 #pokemon-height {
-  font-family: "Pokemon Regular", sans-serif;
+  font-family: "pokemon-font", sans-serif;
   font-size: 36px;
   position: absolute;
   left: 570px;
@@ -93,7 +98,7 @@
 }
 
 #pokemon-weight {
-  font-family: "Pokemon Regular", sans-serif;
+  font-family: "pokemon-font", sans-serif;
   font-size: 36px;
   position: absolute;
   left: 570px;
