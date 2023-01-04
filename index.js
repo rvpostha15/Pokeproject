@@ -17,6 +17,11 @@ let pokeWeight = document.querySelector("#pokemon-weight");
 blueRedToggle.style.backgroundColor = '#cf1920'; //red
 
 // Add an event listener to blueRedToggle
+blueRedToggle.addEventListener('click', function(event) { //secret background color
+    if(event.ctrlKey) {
+  document.body.style.background = 'linear-gradient(to right, #cf1920, #2a52be, #ffcb05)'; //red, blue, yellow
+    }
+});
 blueRedToggle.addEventListener("click", function() {
 
   // Toggle the background color and text between red and blue 
@@ -37,7 +42,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
   .then(pokemon => {
  
     // Set the text content of the results elements to display the Pokémon data
-    pokeName.textContent = pokemon.name;
+    pokeName.textContent = pokemon.name.toUpperCase();
     pokeId.textContent = "ID: " + pokemon.id;
     pokeType.textContent = pokemon.types[0].type.name;
     pokeSprite.src = pokemon.sprites.front_default;
