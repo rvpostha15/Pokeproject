@@ -21,9 +21,23 @@
       <form id="filter-pokemon">
         <select id="filter-select">
           <option value="">All Types</option>
-          <option value="option1">Type 1</option>
-          <option value="option2">Type 2</option>
-          <option value="option3">Type 3</option>
+          <option data-img-src= "./assets/bug.png">
+            <img id="bug-type" src="./assets/bug.png" alt="Bug type icon">Bug
+          </option>
+          <option value="option2">Dragon</option>
+          <option value="option3">Electric</option>
+          <option value="option4">Fighting</option>
+          <option value="option5">Fire</option>
+          <option value="option6">Flying</option>
+          <option value="option7">Ghost</option>
+          <option value="option8">Grass</option>
+          <option value="option9">Ground</option>
+          <option value="option10">Ice</option>
+          <option value="option11">Normal</option>
+          <option value="option12">Poison</option>
+          <option value="option13">Psychic</option>
+          <option value="option14">Rock</option>
+          <option value="option15">Water</option>
         </select>
         <button type="submit">Filter</button>
       </form>
@@ -36,7 +50,7 @@
       
       <p id="pokemon-name"></p>
       <p id="pokemon-id"></p>
-      <p id="pokemon-type"></p>
+      <img id="pokemon-type"></img>
       <img id="pokemon-sprite">
       <p id="pokemon-height"></p>
       <p id="pokemon-weight"></p>

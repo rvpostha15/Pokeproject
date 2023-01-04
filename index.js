@@ -8,11 +8,10 @@ let blueRedToggle = document.querySelector("#blue-red-button");
 blueRedToggle.style.backgroundColor = '#cf1920'; //red
 
 // Add an event listener to blueRedToggle
-blueRedToggle.addEventListener('click', function(event) { //secret background color
-    if(event.ctrlKey) {
+blueRedToggle.addEventListener('dblclick', function() { //secret background color
   document.body.style.background = 'linear-gradient(to right, #cf1920, #2a52be, #ffcb05)'; //red, blue, yellow
-    }
 });
+
 blueRedToggle.addEventListener("click", function() {
 
   // Toggle the background color and text between red and blue 
