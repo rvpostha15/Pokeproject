@@ -5,6 +5,7 @@ let pokeType = document.querySelector("#pokemon-type");
 let pokeSprite = document.querySelector("#pokemon-sprite");
 let pokeHeight = document.querySelector("#pokemon-height");
 let pokeWeight = document.querySelector("#pokemon-weight");
+const player = document.querySelector("#player");
 
 //initial fetch: default display pikachu
 fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
@@ -14,10 +15,11 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
     // Set the text content of the results elements to display the Pokémon data
     pokeName.textContent = pokemon.name.toUpperCase();
     pokeId.textContent = "ID: " + pokemon.id;
-    pokeType.textContent = pokemon.types[0].type.name;
+    pokeType.src = `./assets/${pokemon.types[0].type.name}.png`;
     pokeSprite.src = pokemon.sprites.front_default;
     pokeHeight.textContent = "Height: " + pokemon.height;
     pokeWeight.textContent = "Weight: " + pokemon.weight;
+    player.src = pokeSprite.src;
   });
 
   // document.addEventListener('DOMContentLoaded', () => {

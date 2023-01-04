@@ -1,4 +1,4 @@
-const player = document.querySelector("#player");
+const button = document.querySelector("#pokemon-select");
 
 let playerSize = 20;
 let currentDirection = "";
@@ -16,6 +16,14 @@ document.addEventListener("keydown", (e) => {
         movePlayer(e.key);
     }
 })
+
+button.addEventListener("click", (e) => {
+    player.src = sprite.src;
+})
+
+async function populateSprite() {
+    player.src = sprite.src;
+}
 
 function movePlayer(direction) {
 
