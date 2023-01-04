@@ -61,6 +61,7 @@ body {
     padding-top: 10%;
     justify-content: start, space-between;
     align-content: center;
+    float: left;
   }
 
   #pokedex {
