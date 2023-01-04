@@ -3,24 +3,32 @@
 <head>
   <title>Poképroject</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/game.css">
   <script defer type="text/javascript" src="index.js"></script>
+  <script defer type="text/javascript" src="./src/game.js"></script>
 </head>
 <body>
   <button id="blue-red-button">Pokémon Red</button>
-  <div id="pokedex-template">
-    <img id="pokedex" src="./assets/pokedex-template.png">
-    <div id="pokemon-details">
-      <p id="pokemon-name"></p>
-      <p id="pokemon-id"></p>
-      <p id="pokemon-type"></p>
-      <img id="pokemon-sprite">
+  <section>
+    <div id="pokedex-template">
+      <img id="pokedex" src="./assets/pokedex-template.png">
+      <div id="pokemon-details">
+        <form id="search-pokemon">
+          <input type="text" placeholder="Search that Pokémon" id="search-input">
+          <button type="submit">Search</button>
+        </form>
+        <p id="pokemon-name"></p>
+        <p id="pokemon-id"></p>
+        <p id="pokemon-type"></p>
+        <img id="pokemon-sprite">
+        <p id="pokemon-height"></p>
+        <p id="pokemon-weight"></p>
+      </div>
     </div>
-  </div>
-  <!-- <h1>Search</h1>
-  <form>
-    <input type="text" placeholder="Search that Pokémon" id="search-input">
-    <button type="submit">Search</button>
-  </form> -->
+    <div id="game">
+      <div id="player"></div>
+    </div>
+  </section>
 </body>
 </html>
 
