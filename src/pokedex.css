@@ -6,12 +6,12 @@
 #pokeFilter-container {
   position: absolute;
   left: 40px;
-  top: 225px;
+  top: 222px;
   height: 200px;
-  width: 162px;
+  width: 178px;
   overflow-y: scroll;
   cursor: pointer;
-  font-family: "Pokemon Regular", sans-serif;
+  font-family: "pokemon-font", sans-serif;
   font-size: 18px;
   padding: 10px;
   border: 3px solid rgb(85, 82, 82);
@@ -64,7 +64,7 @@
   font-family: "pokemon-font", sans-serif;
   font-size: 36px;
   position: absolute;
-  left: 460px;
+  left: 430px;
   top: 135px;
   white-space: nowrap;
 }
@@ -83,7 +83,7 @@
   color: #ffffff;
   font-size: 30px;
   position: absolute;
-  left: 825px;
+  left: 480px;
   top: 83px;
   white-space: nowrap;
 }
@@ -93,7 +93,7 @@
   font-size: 36px;
   position: absolute;
   left: 570px;
-  top: 320px;
+  top: 315px;
   white-space: nowrap;
 }
 
