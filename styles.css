@@ -88,9 +88,9 @@ body {
 
   #pokemon-sprite {
     position: absolute;
-    left: 360px;
-    top: 220px;
-    height: 200px;
+    left: 395px;
+    top: 240px;
+    height: 150px;
   }
   
   #pokemon-name {
