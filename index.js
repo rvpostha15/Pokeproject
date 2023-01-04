@@ -53,7 +53,7 @@ function fetchKantoPokemon(){
 
   function renderPokemon(pokeData){
     let allPokemonContainer = document.getElementById('poke-container');
-    let pokeContainer = document.createElement("div") //div will be used to hold the data/details for indiviual pokemon.{}
+    let pokeContainer = document.createElement("div") //div will be used to hold the data/details for individual pokemon.{}
     let pokeName = document.createElement('h4')
     pokeName.innerText = pokeData.name
     let pokeNumber = document.createElement('p')
