@@ -1,0 +1,19 @@
+#game {
+    display: flex;
+    background-color: rgb(71, 71, 71);
+    overflow: hidden;
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000;
+    border-width: 8px;
+}
+
+#player {
+    background-color: rgb(24, 180, 24);
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
