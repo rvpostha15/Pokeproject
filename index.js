@@ -10,6 +10,8 @@ let pokeName = document.querySelector("#pokemon-name");
 let pokeId = document.querySelector("#pokemon-id");
 let pokeType = document.querySelector("#pokemon-type");
 let pokeSprite = document.querySelector("#pokemon-sprite");
+let pokeHeight = document.querySelector("#pokemon-height");
+let pokeWeight = document.querySelector("#pokemon-weight");
 
 // Set the initial background color of the button
 blueRedToggle.style.backgroundColor = '#cf1920'; //red
@@ -37,8 +39,10 @@ fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
     // Set the text content of the results elements to display the Pokémon data
     pokeName.textContent = pokemon.name;
     pokeId.textContent = "ID: " + pokemon.id;
-    pokeType.textContent = "Type: " + pokemon.types[0].type.name;
+    pokeType.textContent = pokemon.types[0].type.name;
     pokeSprite.src = pokemon.sprites.front_default;
+    pokeHeight.textContent = "Height: " + pokemon.height;
+    pokeWeight.textContent = "Weight: " + pokemon.weight;
   });
 
   // document.addEventListener('DOMContentLoaded', () => {
