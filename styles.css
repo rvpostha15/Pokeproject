@@ -52,7 +52,6 @@ body {
     overflow:hidden;
   }
 
-
 /* Hover effect: transition from left to right */
 #blue-red-button::before,
 #blue-red-button::after {

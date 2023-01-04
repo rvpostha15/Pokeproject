@@ -1,3 +1,11 @@
+#game-container {
+    display: flex;
+    justify-content: end;
+    float: right;
+    padding-right: 2%;
+    padding-top: 15%;
+}
+
 #game {
     display: flex;
     background-color: rgb(71, 71, 71);
