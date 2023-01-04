@@ -9,26 +9,37 @@
 </head>
 <body>
   <button id="blue-red-button">Pokémon Red</button>
-  <section>
-    <div id="pokedex-template">
-      <img id="pokedex" src="./assets/pokedex-template.png">
-      <div id="pokemon-details">
-        <form id="search-pokemon">
-          <input type="text" placeholder="Search that Pokémon" id="search-input">
-          <button type="submit">Search</button>
-        </form>
-        <p id="pokemon-name"></p>
-        <p id="pokemon-id"></p>
-        <p id="pokemon-type"></p>
-        <img id="pokemon-sprite">
-        <p id="pokemon-height"></p>
-        <p id="pokemon-weight"></p>
+  <div id="pokedex-template">
+    <img id="pokedex" src="./assets/pokedex-template.png">
+    <div id="pokemon-details">
+      <form id="search-pokemon">
+        <input type="text" placeholder="Search that Pokémon" id="search-input">
+        <button type="submit">Search</button>
+      </form>
+      <form id="filter-pokemon">
+        <select id="filter-select">
+          <option value="">All Types</option>
+          <option value="option1">Type 1</option>
+          <option value="option2">Type 2</option>
+          <option value="option3">Type 3</option>
+        </select>
+        <button type="submit">Filter</button>
+      </form>
+      <div id="pokeFilter-container">
+        <div class="item">Pokemon 1</div>
+        <div class="item">Pokemon 2</div>
+        <div class="item">Pokemon 3</div>
+        ...
       </div>
+      
+      <p id="pokemon-name"></p>
+      <p id="pokemon-id"></p>
+      <p id="pokemon-type"></p>
+      <img id="pokemon-sprite">
+      <p id="pokemon-height"></p>
+      <p id="pokemon-weight"></p>
     </div>
-    <div id="game">
-      <div id="player"></div>
-    </div>
-  </section>
+  </div>
 </body>
 </html>
 
