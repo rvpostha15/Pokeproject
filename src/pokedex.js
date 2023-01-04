@@ -8,7 +8,7 @@ let pokeWeight = document.querySelector("#pokemon-weight");
 const playerSprite = document.querySelector("#player");
 
 //initial fetch: default display pikachu
-fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+fetch('https://pokeapi.co/api/v2/pokemon/charizard')
   .then(response => response.json())
   .then(pokemon => {
  

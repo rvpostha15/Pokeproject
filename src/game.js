@@ -30,7 +30,7 @@ function movePlayer(direction) {
             break;
         }
         case("ArrowRight"): {
-            if (xPos < 550) {
+            if (xPos < 500) {
                 xPos += playerSize;
                 player.style.left = `${xPos}px`;
             }
@@ -44,7 +44,7 @@ function movePlayer(direction) {
             break;
         }
         case("ArrowDown"): {
-            if (yPos > -550) {
+            if (yPos > -500) {
                 yPos -= playerSize;
                 player.style.bottom = `${yPos}px`;
             }
