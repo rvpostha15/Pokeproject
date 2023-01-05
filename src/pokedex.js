@@ -70,19 +70,21 @@ function updatePokemonDetails(url) {
   
     function renderPokemon(pokeData){
       let allPokemonContainer = document.getElementById('poke-container');
-      let pokeContainer = document.createElement("div") //div will be used to hold the data/details for indiviual pokemon.{}
-      pokeContainer.classList = "poke-card";  
+      let pokeContainer = document.createElement("div") //div will be used to hold the data/details for individual pokemon.{}
+      pokeContainer.classList = "poke-card";
       let pokeImage = document.createElement("img") // img will hold our pokemon's sprite
+      pokeImage.classList = "poke-image";
       pokeImage.src = pokeData.sprites.front_default;
       let pokeName = document.createElement('p')
+      pokeName.classList = "poke-name";
       pokeName.innerText = pokeData.name.toUpperCase();    
       //ul list will hold the pokemon types
       // createTypes(pokeData.types, pokeTypes) 
       // helper function to go through the types array and create li tags for each one
-      pokeContainer.append(pokeName, pokeImage);   
+      pokeContainer.append(pokeImage, pokeName);   
       //appending all details to the pokeContainer div
       allPokemonContainer.appendChild(pokeContainer);       
-      //appending that pokeContainer div to the main div which will                                                      hold all the pokemon cards
+      //appending that pokeContainer div to the main div which will hold all the pokemon cards
       pokeContainer.addEventListener("click", (e) => {
         let url = `https://pokeapi.co/api/v2/pokemon/${pokeData.name}/`
         updatePokemonDetails(url);

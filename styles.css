@@ -27,6 +27,7 @@ body {
     cursor: pointer;
     font-family: "pokemon-font", sans-serif;
     font-size: 17px;
+    text-shadow: 2px 2px 1px black;
     padding: 10px;
     border: 3px solid rgb(85, 82, 82);
     border-radius: 0 5px 5px 0;
