@@ -49,11 +49,6 @@ function updatePokemonDetails(url) {
   });
 }
 
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   initialFetch();
-  //   toggle();
-  // })
-
   function fetchKantoPokemon(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
      .then(response => response.json())
@@ -80,7 +75,7 @@ function updatePokemonDetails(url) {
       let pokeImage = document.createElement("img") // img will hold our pokemon's sprite
       pokeImage.src = pokeData.sprites.front_default;
       let pokeName = document.createElement('p')
-      pokeName.innerText = pokeData.id + ' ' + pokeData.name.toUpperCase();    
+      pokeName.innerText = pokeData.name.toUpperCase();    
       //ul list will hold the pokemon types
       // createTypes(pokeData.types, pokeTypes) 
       // helper function to go through the types array and create li tags for each one
