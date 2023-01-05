@@ -9,6 +9,7 @@ let pokeSprite = document.querySelector("#pokemon-sprite");
 let pokeHeight = document.querySelector("#pokemon-height");
 let pokeWeight = document.querySelector("#pokemon-weight");
 let filterBtn = document.querySelector('#filter-btn');
+let searchBtn = document.querySelector('#search-btn')
 const playerSprite = document.querySelector("#player");
 
 let searchBar = document.getElementById("search-pokemon")
@@ -20,16 +21,32 @@ document.addEventListener("DOMContentLoaded", (e) => {
 })
 
 
+//globally scoped variables to help filter
+const filterPokemon = pokeArray.filter(pokemon => {
+  return pokemon.name.includes(searchString)
+})
+
 
 //search bar event
 searchBar.addEventListener('keyup', (e) => {
+  let pokeCards = allPokemonContainer.childNodes.length;
+  for (let i = 0; i < pokeCards; i++) {
+    let testThing = document.querySelector(".poke-card");
+    testThing.remove();
+  }
   const searchString = e.target.value
-  console.log(pokeArray)
   const filterPokemon = pokeArray.filter(pokemon => {
     return pokemon.name.includes(searchString)
   })
+  filterPokemon.forEach(function (pokemon) {
+    renderPokemon(pokemon);
+  })
   console.log(filterPokemon)
 })
+//take the array made from the search input and make it change filter list
+
+
+
 
 
 
