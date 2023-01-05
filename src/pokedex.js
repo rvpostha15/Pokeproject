@@ -17,7 +17,7 @@ let searchBar = document.getElementById("search-pokemon")
 let pokeArray = [];
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  updatePokemonDetails("https://pokeapi.co/api/v2/pokemon/1");
+  updatePokemonDetails("https://pokeapi.co/api/v2/pokemon/25");
 })
 
 
@@ -102,12 +102,12 @@ function updatePokemonDetails(url) {
         pokeType.src = `./assets/${pokemon.past_types[0].types[0].type.name}.png`
         secondType.src = "";
       }
-
-      pokeSprite.src = pokemon.sprites.front_default;
-      pokeHeight.textContent = "Height: " + pokemon.height;
-      pokeWeight.textContent = "Weight: " + pokemon.weight;
-      playerSprite.src = pokeSprite.src;
-    });
+      
+    pokeSprite.src = pokemon.sprites.front_default;
+    pokeHeight.textContent = "Height: " + pokemon.height/10 + "m";
+    pokeWeight.textContent = "Weight: " + pokemon.weight/10 + "kg";
+    playerSprite.src = pokeSprite.src;
+  });
 }
 
 function fetchKantoPokemon() {
