@@ -27,6 +27,7 @@ body {
     cursor: pointer;
     font-family: "pokemon-font", sans-serif;
     font-size: 17px;
+    text-shadow: 2px 2px 1px black;
     padding: 10px;
     border: 3px solid rgb(85, 82, 82);
     border-radius: 0 5px 5px 0;
@@ -42,6 +43,11 @@ body {
     border-radius: 5px 0 0 5px;
   }
 
+  #pokeLogo {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
   #blue-red-button {
     cursor: pointer;
     font-family: "pokemon-font", sans-serif;
@@ -49,6 +55,7 @@ body {
     color: white;
     border-radius: 100px;
     border-color: #ffcb05;
+    border-width: 3px;
     margin: 40px;
     padding: 15px;
     position: absolute;
