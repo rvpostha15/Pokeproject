@@ -1,5 +1,7 @@
 // basic api url for fetch requests
 // let url = 'https://pokeapi.co/api/v2/'
+// Boolean for super secret color
+let isGradient = false;
 
 // Get a reference to the button
 let blueRedToggle = document.querySelector("#blue-red-button");
@@ -9,7 +11,13 @@ blueRedToggle.style.backgroundColor = '#cf1920'; //red
 
 // Add an event listener to blueRedToggle
 blueRedToggle.addEventListener('dblclick', function() { //secret background color
-  document.body.style.background = 'linear-gradient(to right, #cf1920, #2a52be, #ffcb05)'; //red, blue, yellow
+  isGradient = !isGradient;
+  if(isGradient) {
+    document.body.style.background = 'linear-gradient(to right, #cf1920, #2a52be, #ffcb05)'; //red, blue, yellow
+  }
+  else {
+    document.body.style.background = '#cf1920';
+  }
 });
 
 blueRedToggle.addEventListener("click", function() {
