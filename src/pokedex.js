@@ -29,12 +29,14 @@ filterBtn.addEventListener("click", (e) => {
   let result = pokeArray.filter((pokemon) => {if (pokemon.types[0].type.name === document.querySelector("select").value) {
       return pokemon;
     }
+      else if(document.querySelector("select").value === "") {
+        return pokemon;
+      }
   });
 
   result.forEach(function(pokemon) {
     renderPokemon(pokemon);
   });
-  console.log(result);
 })
 
 //initial fetch: default display pikachu
