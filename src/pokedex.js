@@ -14,7 +14,7 @@ const playerSprite = document.querySelector("#player");
 let pokeArray = [];
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  updatePokemonDetails("https://pokeapi.co/api/v2/pokemon/1");
+  updatePokemonDetails("https://pokeapi.co/api/v2/pokemon/25");
 })
 
 filterBtn.addEventListener("click", (e) => {
@@ -70,8 +70,8 @@ function updatePokemonDetails(url) {
     }
 
     pokeSprite.src = pokemon.sprites.front_default;
-    pokeHeight.textContent = "Height: " + pokemon.height;
-    pokeWeight.textContent = "Weight: " + pokemon.weight;
+    pokeHeight.textContent = "Height: " + pokemon.height/10 + "m";
+    pokeWeight.textContent = "Weight: " + pokemon.weight/10 + "kg";
     playerSprite.src = pokeSprite.src;
   });
 }
