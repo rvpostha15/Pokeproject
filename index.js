@@ -18,10 +18,11 @@ blueRedToggle.addEventListener("click", function() {
   if (document.body.style.backgroundColor === 'rgb(207, 25, 32)') { //red
     document.body.style.backgroundColor = '#2a52be'; //blue
     blueRedToggle.style.backgroundColor = '#cf1920'; //red
-    blueRedToggle.textContent = "Pokémon Red"; //text
+    blueRedToggle.textContent = "Pokemon Red"; //text
   } else {
     document.body.style.backgroundColor = '#cf1920'; //red
     blueRedToggle.style.backgroundColor = '#2a52be'; //blue
-    blueRedToggle.textContent = "Pokémon Blue"; //text
+    blueRedToggle.textContent = "Pokemon Blue"; //text
   }
 });
+

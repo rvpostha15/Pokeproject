@@ -4,6 +4,9 @@
 }
 
 #pokeFilter-container {
+  font-family: "pokemon-font", sans-serif;
+  text-shadow: 2px 2px 1px black;
+  color: #ffffff;
   position: absolute;
   left: 40px;
   top: 222px;
@@ -77,6 +80,14 @@
   white-space: nowrap;
 }
 
+#second-type {
+  position: absolute;
+  width: 176px;
+  left: 747px;
+  top: 257px;
+  white-space: nowrap;
+}
+
 #pokemon-id {
   font-family: "pokemon-font", sans-serif;
   text-shadow: 2px 2px 1px black;
@@ -104,4 +115,14 @@
   left: 570px;
   top: 380px;
   white-space: nowrap;
+}
+
+.poke-card {
+  text-align: left;
+  text-indent: 50px;
+  font-size: 14px;
+  background-color: #ef3132;
+  border-style: solid;
+  border-color: #2a2a2a;
+  border-radius: 10px;
 }
