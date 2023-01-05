@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "pokemon-font";
+    src: url("./pokemon-font.woff") format("woff");
+}
+
+#game-container {
+    display: flex;
+    justify-content: end;
+    float: right;
+    padding-right: 2%;
+    padding-top: 15%;
+}
+
+#game {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: #2a2a2a;
+    background-color: white;
+}
+
+#player {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    object-fit: fill;
+}

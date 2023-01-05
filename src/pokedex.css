@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "pokemon-font";
+  src: url("./pokemon-font.woff") format("woff");
+}
+
+#pokeFilter-container {
+  font-family: "pokemon-font", sans-serif;
+  text-shadow: 2px 2px 1px black;
+  color: #ffffff;
+  position: absolute;
+  left: 40px;
+  top: 222px;
+  height: 220px;
+  width: 310px;
+  overflow-y: scroll;
+  cursor: pointer;
+  font-family: "pokemon-font", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border: 3px solid rgb(85, 82, 82);
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+  box-shadow: 10px 10px #C6CED6;
+}  
+
+#filter-pokemon {
+  position: absolute;
+  left: 40px;
+  top: 180px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 10px 10px #C6CED6;
+}
+#filter-select {
+  width: 254px;
+}
+
+#pokedex-template {
+  height: 750px;
+  width: 750px;
+  display: flex;
+  float: left;
+  padding-left: 2%;
+  padding-top: 10%;
+  justify-content: start, space-between;
+  align-content: center;
+}
+
+#pokedex {
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: #2a2a2a;
+}
+
+#search-pokemon {
+  position: absolute;
+  left: 40px;
+  top: 110px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 10px 10px #C6CED6;
+}
+
+#pokemon-details {
+  position: absolute;
+}
+
+#pokemon-sprite {
+  position: absolute;
+  left: 395px;
+  top: 240px;
+  height: 150px;
+}
+
+#pokemon-name {
+  font-family: "pokemon-font", sans-serif;
+  font-size: 36px;
+  position: absolute;
+  left: 430px;
+  top: 135px;
+  white-space: nowrap;
+}
+
+#pokemon-type {
+  position: absolute;
+  width: 176px;
+  left: 560px;
+  top: 257px;
+  white-space: nowrap;
+}
+
+#second-type {
+  position: absolute;
+  width: 176px;
+  left: 747px;
+  top: 257px;
+  white-space: nowrap;
+}
+
+#pokemon-id {
+  font-family: "pokemon-font", sans-serif;
+  text-shadow: 2px 2px 1px black;
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  left: 480px;
+  top: 83px;
+  white-space: nowrap;
+}
+
+#pokemon-height {
+  font-family: "pokemon-font", sans-serif;
+  font-size: 36px;
+  position: absolute;
+  left: 570px;
+  top: 315px;
+  white-space: nowrap;
+}
+
+#pokemon-weight {
+  font-family: "pokemon-font", sans-serif;
+  font-size: 36px;
+  position: absolute;
+  left: 570px;
+  top: 380px;
+  white-space: nowrap;
+}
+
+.poke-card {
+  text-indent: 50px;
+  font-size: 14px;
+  background-color: #ef3132;
+  border-style: solid;
+  border-color: #2a2a2a;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+img.poke-image {
+  position: relative;
+  max-height: 80px;
+  display: flex;
+  float: left;
+  top: -15px;
+}

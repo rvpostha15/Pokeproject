@@ -3,24 +3,63 @@
 <head>
   <title>Poképroject</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/game.css">
+  <link rel="stylesheet" href="./src/pokedex.css">
   <script defer type="text/javascript" src="index.js"></script>
+  <script defer type="text/javascript" src="./src/game.js"></script>
+  <script defer type="text/javascript" src="./src/pokedex.js"></script>
 </head>
 <body>
-  <button id="blue-red-button">Pokémon Red</button>
+  <button id="blue-red-button">
+    <img id="pokeLogo" src="./assets/pokemon-logo.png">
+  </button>
   <div id="pokedex-template">
     <img id="pokedex" src="./assets/pokedex-template.png">
     <div id="pokemon-details">
+      <form id="search-pokemon">
+        <input type="text" placeholder="Search that Pokemon" id="search-input">
+        <button type="submit">Search</button>
+      </form>
+      <form id="filter-pokemon">
+        <select id="filter-select">
+          <option value="">All Types</option>
+          <option value="bug">Bug</option>
+          <option value="dragon">Dragon</option>
+          <option value="electric">Electric</option>
+          <option value="fighting">Fighting</option>
+          <option value="fire">Fire</option>
+          <option value="flying">Flying</option>
+          <option value="ghost">Ghost</option>
+          <option value="grass">Grass</option>
+          <option value="ground">Ground</option>
+          <option value="ice">Ice</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="water">Water</option>
+        </select>
+        <button type="submit" id="filter-btn">Filter</button>
+      </form>
+      <div id="pokeFilter-container">
+        <div id="poke-container"></div>
+      </div>
+      
       <p id="pokemon-name"></p>
       <p id="pokemon-id"></p>
-      <p id="pokemon-type"></p>
+      <img id="pokemon-type">
+      <img id="second-type">
       <img id="pokemon-sprite">
+      <p id="pokemon-height"></p>
+      <p id="pokemon-weight"></p>
     </div>
   </div>
-  <!-- <h1>Search</h1>
-  <form>
-    <input type="text" placeholder="Search that Pokémon" id="search-input">
-    <button type="submit">Search</button>
-  </form> -->
+  <div id="game-container">
+    <div id="game">
+      <img id="player">
+    </div>
+  </div>
+  
 </body>
 </html>
 
