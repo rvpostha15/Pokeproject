@@ -26,7 +26,9 @@ const filterPokemon = pokeArray.filter(pokemon => {
   return pokemon.name.includes(searchString)
 })
 
-
+searchBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+});
 //search bar event
 searchBar.addEventListener('keyup', (e) => {
   let pokeCards = allPokemonContainer.childNodes.length;
