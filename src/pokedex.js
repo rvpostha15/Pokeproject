@@ -1,4 +1,6 @@
 // Get references to the results elements
+let filterContainer = document.getElementById('#pokeFilter-container');
+let allPokemonContainer = document.getElementById('poke-container');
 let pokeName = document.querySelector("#pokemon-name");
 let pokeId = document.querySelector("#pokemon-id");
 let pokeType = document.querySelector("#pokemon-type");
@@ -6,10 +8,33 @@ let secondType = document.querySelector("#second-type");
 let pokeSprite = document.querySelector("#pokemon-sprite");
 let pokeHeight = document.querySelector("#pokemon-height");
 let pokeWeight = document.querySelector("#pokemon-weight");
+let filterBtn = document.querySelector('#filter-btn');
 const playerSprite = document.querySelector("#player");
+
+let pokeArray = [];
 
 document.addEventListener("DOMContentLoaded", (e) => {
   updatePokemonDetails("https://pokeapi.co/api/v2/pokemon/1");
+})
+
+filterBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let pokeCards = allPokemonContainer.childNodes.length;
+  for(let i = 0; i < pokeCards; i++){
+    let testThing = document.querySelector(".poke-card");
+    testThing.remove();
+  }
+
+  let result = pokeArray.filter((pokemon) => {if (pokemon.types[0].type.name === document.querySelector("select").value) {
+      return pokemon;
+    }
+  });
+
+  result.forEach(function(pokemon) {
+    renderPokemon(pokemon);
+  });
+  console.log(result);
 })
 
 //initial fetch: default display pikachu
@@ -64,12 +89,12 @@ function updatePokemonDetails(url) {
       fetch(url)
       .then(response => response.json())
       .then(function(pokeData){
+      pokeArray.push(pokeData);
       renderPokemon(pokeData)
       })
     }
   
     function renderPokemon(pokeData){
-      let allPokemonContainer = document.getElementById('poke-container');
       let pokeContainer = document.createElement("div") //div will be used to hold the data/details for individual pokemon.{}
       pokeContainer.classList = "poke-card";
       let pokeImage = document.createElement("img") // img will hold our pokemon's sprite
