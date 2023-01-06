@@ -16,6 +16,7 @@ body {
   }
   
   input[type="text"] {
+    height: 24px;
     font-family: "pokemon-font", sans-serif;
     font-size: 17px;
     padding: 10px;
@@ -24,6 +25,7 @@ body {
   }
   
   button[type="submit"] {
+    height: 50px;
     cursor: pointer;
     font-family: "pokemon-font", sans-serif;
     font-size: 17px;
@@ -35,6 +37,7 @@ body {
     color: white;
   }
   select {
+    height: 50px;
     cursor: pointer;
     font-family: "pokemon-font", sans-serif;
     font-size: 15px;
