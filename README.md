@@ -1,14 +1,20 @@
-# Pokeproject
-phase 1 project 1
+Pokeproject
+This application is able to search and filter through all 151 Kanto region pokemon and display their types like a Pokedex
 
-https://docs.google.com/document/d/1LFAvPPodKgOUVIBNbQIKEHwgLH-i2e2EeXMQ8-6tJPo/edit?usp=sharing
+User Stories
+This application is able to change the background layout color based on the user’s click from red, blue, and red/blue/yellow. 
+
+You are able to search the Pokemon by their name as well as filter out groups of pokemon by their types. 
+
+Displays the selected pokemon height, weight, name, image, and type in the Pokedex. 
+
+The selected pokemon also displays in a minigame and the user is able to move the pokemon around with the arrow keys. 
 
 ==================================Sources==============================================
-
-https://medium.com/@sergio13prez/fetching-them-all-poke-api-62ca580981a2
-
-https://github.com/frontendcharm/Mini-Projects/blob/main/ICON%20HOVERS/Icons%20Hover%20Effects/style.css
-
-https://www.instagram.com/p/CmMPTulDV0v/
-
-https://fontmeme.com/fonts/pokemon-classic-font/
+Fetching the original Pokemon using the Poke API | by Sergio Perez | Medium
+Transition hover effect: https://github.com/frontendcharm/Mini-Projects/blob/main/ICON%20HOVERS/Icons%20Hover%20Effects/style.css
+Transition hover effect: https://www.instagram.com/p/CmMPTulDV0v/
+ 
+Type icons: https://bulbapedia.bulbagarden.net/wiki/Type
+ 
+Pokedex template: https://www.reddit.com/r/fakemon/comments/wgz52w/made_a_pokedex_entry_template_from_the_hgss/
