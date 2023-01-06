@@ -1,5 +1,7 @@
 // basic api url for fetch requests
 // let url = 'https://pokeapi.co/api/v2/'
+
+// Boolean for super secret color
 let isGradient = false;
 
 // Get a reference to the button
